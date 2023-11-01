@@ -105,7 +105,7 @@ class VCaching {
         // purge post/page cache from post/page actions
         if ($this->check_if_purgeable()) {
             if(!session_id()) {
-                session_start();
+                //session_start();
             }
             add_filter('post_row_actions', array(
                 &$this,
